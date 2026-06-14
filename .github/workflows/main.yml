@@ -9,3 +9,7 @@ jobs:
     steps:
       - name: print a welcome message
         run: echo "welcome message"
+      - name : checkout code
+        uses: actions/checkout@v6.0.3
+      - name: list a repos
+        run: ls -la
